@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Props-Hooks-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório demonstra o uso de **Props** e **Hooks** no desenvolvimento de componentes em **React**. O objetivo do projeto é explorar como esses conceitos podem ser aplicados para criar componentes reutilizáveis e gerenciar estados e efeitos colaterais de maneira eficiente.
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto consiste em uma aplicação simples desenvolvida em **React**, onde são abordados os seguintes conceitos:
 
-## Expanding the ESLint configuration
+- **Props**: Passagem de dados entre componentes pai e filho.
+- **Hooks**: Utilização de hooks como `useState` e `useEffect` para gerenciar o estado e os ciclos de vida dos componentes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+**React**: Biblioteca principal utilizada para construir a interface do usuário.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**JavaScript (ES6+)**: Linguagem de programação utilizada para a lógica da aplicação.
+
+**CSS**: Usado para estilização dos componentes.
+
+**HTML**: Estrutura base da aplicação.
+
+## Funcionalidades
+
+**Passagem de Props**: Demonstração de como passar dados de um componente pai para seus filhos.
+
+**Gerenciamento de Estado**: Utilização de `useState` para manipular o estado interno dos componentes.
+
+**Efeitos Colaterais**: Uso de `useEffect` para realizar operações após a renderização dos componentes, como requisições de API ou manipulação do DOM.
+
+## Instalação
+
+1. Clone o repositório: 
+
+   ```bash
+   git clone https://github.com/nicollaseu/Props-Hooks-React.git
+   ```
+
+2. Navegue até o diretório do projeto: 
+
+   ```bash
+   cd Props-Hooks-React
+   ```
+
+3. Instale as dependências: 
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie a aplicação: 
+
+   ```bash
+   npm start
+   ```
+
+A aplicação estará disponível em `http://localhost:3000`.
+
+## Estrutura de Pastas
+
+```react
+Props-Hooks-React/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
